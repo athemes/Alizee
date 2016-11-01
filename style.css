@@ -4,7 +4,7 @@ Theme URI: http://athemes.com/theme/alizee
 Author: aThemes
 Author URI: http://athemes.com
 Description: Alizee is a grid-based theme with a fully responsive Masonry (Pinterest-like) layout. It features a parallax header image, four home page layouts, the ability to choose from the most popular Google Fonts, custom logo and favicon upload, toggable social menu, toggable sidebar on the home page, unlimited color schemes, color options for various elements, FontAwesome icons, custom widgets, and much more. 
-Version: 1.06
+Version: 1.07
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: alizee
@@ -41,11 +41,10 @@ Alizee is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic,
 --------------------------------------------------------------*/
 /* Some styling to complement or overwrite the styles included in Bootstrap */
 body {
-	background: url('images/bg.png');
-	background-color: #faf4f4;
+	background-color: #f7f7f7;
 	font-family: 'Open Sans', sans-serif;
-	color: #868686;
-	line-height: 1.5;
+	color: #737579;
+	line-height: 1.8;
 	word-wrap: break-word;
 }
 #page {
@@ -124,7 +123,7 @@ table > tfoot > tr > td {
 	float: left;
 	width: 100%;
 	text-align: center;
-	box-shadow: 0 0 1px #adadad;
+	box-shadow: 0px 0px 10px 0px rgba(130, 142, 148, 0.1);
 	background-color: rgba(60, 60, 60, 0.8);
 	z-index: 999;
 }
@@ -214,7 +213,7 @@ table > tfoot > tr > td {
 	text-transform: uppercase;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 18px;
-	box-shadow: 0 0 1px #adadad;
+	box-shadow: 0px 0px 10px 0px rgba(130, 142, 148, 0.1);
 	-webkit-transition: background-color 0.2s;
 	transition: background-color 0.2s;
 }
@@ -422,7 +421,7 @@ table > tfoot > tr > td {
 	margin: 0 0 30px;
 	padding: 30px;
 	background-color: #fff;
-	box-shadow: 0 0 1px #adadad;
+	box-shadow: 0px 0px 10px 0px rgba(130, 142, 148, 0.1);
 }
 .widget-area .widget:last-of-type {
 	margin: 0;
@@ -588,15 +587,25 @@ table > tfoot > tr > td {
 	background-color: #fff;
 	padding: 30px;
 	margin-bottom: 60px;
-	box-shadow: 0 0 1px #adadad;
+	box-shadow: 0px 0px 10px 0px rgba(130, 142, 148, 0.1);
 }
 .home .hentry {
 	width: 350px;
 	margin: 0 30px 30px 0;
 }
+.home.page .hentry {
+	width: 100%;
+}
+.home-layout .hentry {
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.home-layout .hentry:hover {
+    box-shadow: 0px 0px 10px 5px rgba(130, 142, 148, 0.2);
+}
 .entry-thumb {
 	position: relative;	
-	margin: -30px -30px 0;
+	margin: -30px -30px 30px;
 	border-bottom: 3px solid #fbb829;
 	background-color: #fbb829;
 }
@@ -632,8 +641,7 @@ table > tfoot > tr > td {
 	margin: -30px -30px 30px;
 }
 .entry-title {
-	margin: 0;
-	padding: 15px 0 5px 0;
+	margin: 0 0 15px;
 }
 .entry-title a {
 	font-size: 26px;
@@ -661,13 +669,9 @@ table > tfoot > tr > td {
 .group-blog .byline {
 	display: inline;
 }
-.single .entry-header,
-.page .entry-header {
+.entry-header {
 	margin-bottom: 15px;
 	overflow: hidden;
-}
-.entry-meta {
-	margin-bottom: 15px;
 }
 .entry-content {
 	overflow: auto;
@@ -688,7 +692,7 @@ table > tfoot > tr > td {
 }
 .entry-meta .fa-calendar,
 .widget .fa-calendar {
-	margin-right: 3px;
+	margin-right: 5px;
 }
 .page-links {
 	clear: both;
@@ -699,7 +703,7 @@ table > tfoot > tr > td {
 	margin-bottom: 60px;
 	padding: 30px;
 	background-color: #fff;
-	box-shadow: 0 0 1px #adadad;
+	box-shadow: 0px 0px 10px 0px rgba(130, 142, 148, 0.1);
 }
 .author-bio .avatar {
 	display: block;
@@ -773,9 +777,9 @@ table > tfoot > tr > td {
 	margin-bottom: 30px;
 }
 .comment-body {
-	padding: 15px;
+	padding: 30px;
 	margin-bottom: 20px;
-	box-shadow: 0 0 1px #adadad;
+	box-shadow: 0px 0px 10px 0px rgba(130, 142, 148, 0.1);
 	background-color: #fff;
 }
 .reply {
@@ -784,7 +788,7 @@ table > tfoot > tr > td {
 .comment-reply-link {
 	padding: 5px;
 	background-color: #fff;
-	box-shadow: 0 0 1px #adadad;
+	box-shadow: 0px 0px 10px 0px rgba(130, 142, 148, 0.1);
 	font-size: 12px;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;	
@@ -814,7 +818,8 @@ textarea#comment {
 	width: 100%;
 	max-width: 100%;
 	padding: 10px;
-	border: 1px solid #c5c5c5;
+	border: 0;
+	box-shadow: 0px 0px 10px 0px rgba(130, 142, 148, 0.1);
 }
 .comment-form-author:before,
 .comment-form-email:before,
@@ -843,7 +848,7 @@ textarea#comment {
 	box-shadow: none;
 	border: none;
 	background-color: #fbb829;
-	box-shadow: 0 0 1px #adadad;
+	box-shadow: 0px 0px 10px 0px rgba(130, 142, 148, 0.1);
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;	
 }
@@ -984,7 +989,7 @@ object {
 	width: 100%;
 }
 .home-layout {
-	margin: 0 0 60px 15px;
+	margin: 0 0 30px 15px;
 }
 .site-info {
 	padding: 30px 0;
@@ -1123,7 +1128,7 @@ object {
 	border: 0;
 	background-color: #fbb829;
 	color: #fff;
-	box-shadow: 0 0 1px #adadad;
+	box-shadow: 0px 0px 10px 0px rgba(130, 142, 148, 0.1);
 }
 
 /*--------------------------------------------------------------

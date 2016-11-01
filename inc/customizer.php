@@ -292,7 +292,7 @@ function alizee_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'body_text_color',
 		array(
-			'default'			=> '#868686',
+			'default'			=> '#737579',
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'			=> 'postMessage'
 		)

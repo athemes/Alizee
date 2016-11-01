@@ -30,7 +30,7 @@ function alizee_setup() {
 	// Set the content width based on the theme's design and stylesheet.
 	global $content_width;
 	if ( ! isset( $content_width ) ) {
-		$content_width = 640; /* pixels */
+		$content_width = 1170; /* pixels */
 	}
 
 	/*
@@ -73,8 +73,8 @@ function alizee_setup() {
 
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'alizee_custom_background_args', array(
-		'default-color' => 'faf4f4',
-		'default-image' => '',
+		'default-color' => 'f7f7f7',
+		'default-image' => get_stylesheet_directory_uri() . '/images/bg.png',
 	) ) );
 }
 endif; // alizee_setup

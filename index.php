@@ -20,7 +20,7 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php $c = 0; ?>
-			<div class="home-layout">
+			<div id="posts-loop" class="home-layout">
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php
