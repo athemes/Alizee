@@ -42,7 +42,7 @@ function alizee_custom_styles($custom) {
 	}
 	//Body text
 	$body_text = esc_html(get_theme_mod( 'body_text_color' ));
-	if ( isset($body_text) && ( $body_text != '#868686' )) {
+	if ( isset($body_text) && ( $body_text != '#737579' )) {
 		$custom .= "body { color: {$body_text}; }"."\n";
 	}
 	//Menu background

@@ -9,7 +9,9 @@
 ?>
 
 	</div><!-- #content -->
-	<?php get_sidebar('footer'); ?>
+	<?php if ( is_active_sidebar( 'sidebar-3' ) ) {
+		get_sidebar('footer');
+	} ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">

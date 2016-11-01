@@ -12,7 +12,7 @@
  */
 function alizee_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
-		'container' => 'main',
+		'container' => 'posts-loop',
 		'footer'    => 'page',
 	) );
 }
